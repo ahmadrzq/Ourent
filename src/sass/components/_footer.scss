@@ -5,12 +5,12 @@
   padding: 40px 0;
   color: #fff;
   .send {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 540px) {
       display: flex;
       flex-direction: column;
     }
     button {
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 540px) {
         margin-top: 20px;
       }
     }
@@ -48,7 +48,7 @@ footer {
       color: grey;
     }
     .input {
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 540px) {
         margin-top: 10px;
         flex-direction: column;
         row-gap: 20px;
