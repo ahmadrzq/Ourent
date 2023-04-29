@@ -1,0 +1,31 @@
+.about {
+  margin-bottom: 80px;
+
+  .container {
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+    .left {
+      .heading {
+        text-align: left;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 15px;
+        padding-right: 30px;
+        margin-bottom: 20px;
+        line-height: 30px;
+
+        @media screen and (max-width: 768px) {
+          padding: 0;
+        }
+      }
+    }
+    img {
+      @media screen and (max-width: 768px) {
+        margin-top: 50px;
+      }
+    }
+  }
+}

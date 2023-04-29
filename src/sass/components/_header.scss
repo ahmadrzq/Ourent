@@ -1,0 +1,87 @@
+@use "../global/variables" as *;
+
+header {
+  width: 100%;
+  height: 10vh;
+  box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  background: $white;
+
+  @media screen and (max-width: $lbs) {
+    padding: 0;
+  }
+
+  .logo {
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      span {
+        color: $primary;
+      }
+    }
+  }
+  .nav {
+    a {
+      margin-left: 30px;
+      transition: 0.5s;
+      font-weight: 500;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      .flex-sb {
+        display: none;
+      }
+
+      .small {
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        background-color: $primary;
+        padding: 20px;
+        a {
+          display: inline-block;
+          margin-bottom: 20px;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .button {
+    h4 {
+      font-weight: 400;
+      margin-right: 20px;
+      span {
+        width: auto;
+        padding: 0 6px;
+        background: $primary;
+        color: #fff;
+        border-radius: 50%;
+        margin-right: 4px;
+        font-weight: 400;
+      }
+    }
+    i {
+      margin-right: 5px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+  .toggle {
+    display: none;
+
+    @media screen and (max-width: 1024px) {
+      display: block;
+    }
+  }
+}

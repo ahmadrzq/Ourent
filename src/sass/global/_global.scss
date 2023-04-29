@@ -1,0 +1,152 @@
+.container {
+  max-width: 80%;
+  margin: auto;
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    max-width: 90%;
+  }
+}
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.background {
+  padding: 80px 0;
+  position: relative;
+  background-color: #f7f9fc;
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.mtop {
+  margin-top: 50px;
+}
+
+.shadow {
+  box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+}
+
+.padding {
+  padding: 80px;
+  @media screen and (max-width: 1024px) {
+    padding: 80px 0;
+  }
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 540px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.btn2 {
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.btn4 {
+  background-color: #000;
+  color: #fff;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.btn5 {
+  border-radius: 50px;
+  padding: 20px 40px;
+  color: #186fb3;
+  font-size: 20px;
+  font-weight: 400;
+  border: 5px solid #27ae601f;
+}
+
+.mb {
+  margin-bottom: 80px;
+}
+
+.back {
+  height: 40vh;
+  position: relative;
+  @media screen and (max-width: 768px) {
+    height: 30vh;
+  }
+  .container {
+    color: #fff;
+    padding: 120px 0;
+    h1 {
+      font-size: 40px;
+      font-weight: 500;
+    }
+  }
+  img {
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+
+    @media screen and (max-width: 768px) {
+      height: 30vh;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: 40vh;
+    background: rgba(17, 40, 72, 0.629);
+    z-index: -1;
+
+    @media screen and (max-width: 768px) {
+      height: 30vh;
+    }
+  }
+}

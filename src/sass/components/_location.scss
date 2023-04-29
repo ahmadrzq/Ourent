@@ -1,0 +1,42 @@
+.location {
+  .box {
+    position: relative;
+    border-radius: 5px;
+    img {
+      border-radius: 5px;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #fff;
+      z-index: 2222;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgb(15 28 47 / 30%);
+        z-index: -1;
+        border-radius: 5px;
+      }
+      h5 {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      label {
+        color: #fff;
+        margin-right: 20px;
+        opacity: 0.8;
+      }
+    }
+  }
+}

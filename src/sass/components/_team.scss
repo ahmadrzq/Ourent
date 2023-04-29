@@ -1,0 +1,79 @@
+.team {
+  .box {
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid rgb(62 29 131 /10%);
+    padding: 2rem;
+    transition: 0.5s;
+
+    @media screen and (max-width: 320px) {
+      width: 95%;
+    }
+
+    &:hover {
+      box-shadow: 0 0 20px 0 rgb(112 121 139 / 18%);
+      cursor: pointer;
+    }
+
+    .details {
+      text-align: center;
+      margin-top: 30px;
+      .img {
+        width: 90px;
+        height: 90px;
+        margin: auto;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          top: -15px;
+          left: -15px;
+          width: 110px;
+          height: 110px;
+          border: 5px solid #edf0f5;
+          border-radius: 50%;
+        }
+        img {
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+        }
+        i {
+          color: #108be7;
+          font-size: 17px;
+          position: absolute;
+          top: 35px;
+          right: -10px;
+        }
+      }
+      label {
+        display: inline-block;
+        margin-top: 20px;
+      }
+      i {
+        color: grey;
+        margin-right: 5px;
+      }
+      ul {
+        margin-top: 20px;
+        li {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          align-items: center;
+          background-color: #f4f5f7;
+          border-radius: 50%;
+          margin: 5px;
+        }
+      }
+      .button {
+        margin-top: 20px;
+        i {
+          color: white;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
