@@ -20,6 +20,10 @@ To get started with this project, follow these steps:
 3. Run the development server using `npm run dev`.
 4. Open your browser and go to `http://localhost:5173/` to see the website.
 
+## Website Overview
+
+This website is hosted on Netlify and can be accessed via the following link: [https://loquacious-daifuku-29520b.netlify.app/](https://loquacious-daifuku-29520b.netlify.app/). 
+
 ## Folder Structure
 
 The main files and directories in this project are:
